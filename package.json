@@ -1,0 +1,19 @@
+{
+  "name": "diego-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajilpappachan/diego.git"
+  },
+  "author": "Ajil Pappachan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajilpappachan/diego/issues"
+  },
+  "homepage": "https://github.com/ajilpappachan/diego#readme"
+}
