@@ -16,6 +16,8 @@ client.on("ready", () => {
 	new WOKCommands(client, {
 		commandsDir: path.join(__dirname, "commands"),
 		testServers: ["910970317160189962"],
+		botOwners: ["444094552723423232"],
+		mongoUri: process.env.DATABASE_URL,
 	});
 });
 
