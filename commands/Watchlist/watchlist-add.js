@@ -1,4 +1,4 @@
-const watchItemSchema = require("../schemas/watchItemSchema");
+const watchItemSchema = require("../../schemas/watchItemSchema");
 
 module.exports = {
 	category: "Watchlist",
