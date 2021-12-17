@@ -1,26 +1,28 @@
 {
-  "name": "diego-bot",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ajilpappachan/diego.git"
-  },
-  "author": "Ajil Pappachan",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ajilpappachan/diego/issues"
-  },
-  "homepage": "https://github.com/ajilpappachan/diego#readme",
-  "dependencies": {
-    "discord.js": "^13.3.1",
-    "dotenv": "^10.0.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.15"
-  }
+	"name": "diego-bot",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch": "nodemon ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ajilpappachan/diego.git"
+	},
+	"author": "Ajil Pappachan",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ajilpappachan/diego/issues"
+	},
+	"homepage": "https://github.com/ajilpappachan/diego#readme",
+	"dependencies": {
+		"discord.js": "^13.3.1",
+		"dotenv": "^10.0.0",
+		"wokcommands": "^1.5.3"
+	},
+	"devDependencies": {
+		"nodemon": "^2.0.15"
+	}
 }
