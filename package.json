@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/ajilpappachan/diego/issues"
   },
-  "homepage": "https://github.com/ajilpappachan/diego#readme"
+  "homepage": "https://github.com/ajilpappachan/diego#readme",
+  "dependencies": {
+    "discord.js": "^13.3.1",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
