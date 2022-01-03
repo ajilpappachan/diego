@@ -21,8 +21,8 @@ module.exports = {
 const getTimeString = async (timeZone) => {
 	const response = await fetch(url + timeZone);
 	const { date, hour, minute } = await response.json();
-	const time = `${date} ${hour % 12}:${`00${minute}`.slice(-2)} ${
-		hour / 12 != 0 ? "PM" : "AM"
-	}`;
+	const time = `${date} ${hour > 12 ? hour % 12 : hour}:${`00${minute}`.slice(
+		-2
+	)} ${hour >= 12 ? "PM" : "AM"}`;
 	return time;
 };
