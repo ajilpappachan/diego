@@ -33,9 +33,14 @@ module.exports = {
 		const results = await projectItemSchema.find({});
 		const _id = results.length + 1;
 		const name = interaction.options.getString("name");
+		const deadlineDetails = interaction.options
+			.getString("deadline")
+			.split("/");
 		const deadline = new Date(
-			interaction.options.getString("deadline")
-		).toLocaleDateString("en-gb");
+			deadlineDetails[2],
+			parseInt(deadlineDetails[1]) - 1,
+			deadlineDetails[0]
+		);
 		const owner = interaction.options.getString("owner") || 1;
 		await new projectItemSchema({
 			_id,
