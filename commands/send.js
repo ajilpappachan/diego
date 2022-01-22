@@ -6,6 +6,16 @@ const unsplash = createApi({
 	fetch: nodeFetch,
 });
 
+const checkForSpecialQuery = (query) => {
+	switch (query) {
+		case "ham":
+			return "hamster";
+		case "catto":
+			return "cat";
+	}
+	return query;
+};
+
 module.exports = {
 	category: "Requests",
 	description: "Send noods",
@@ -20,7 +30,7 @@ module.exports = {
 
 	callback: async ({ channel, args }) => {
 		const result = await unsplash.photos.getRandom({
-			query: args[0],
+			query: checkForSpecialQuery(args[0]),
 			count: args[1],
 		});
 
