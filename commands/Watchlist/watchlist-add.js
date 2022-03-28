@@ -18,7 +18,7 @@ module.exports = {
 			name: "priority",
 			description: "priority in list",
 			required: false,
-			type: 4,
+			type: 10,
 		},
 	],
 
