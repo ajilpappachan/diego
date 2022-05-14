@@ -2,7 +2,7 @@ const dateIdeaSchema = require("../../schemas/dateIdeaSchema");
 
 module.exports = {
 	category: "Date Ideas",
-	description: "Add item to date ideas list",
+	description: "Add item to Date ideas list",
 
 	slash: true,
 	testOnly: true,

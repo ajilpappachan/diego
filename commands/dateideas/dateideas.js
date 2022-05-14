@@ -53,7 +53,7 @@ String.prototype.toTitleCase = function () {
 
 module.exports = {
 	category: "Date Ideas",
-	description: "View all items in date ideas list",
+	description: "View all items in Date ideas list",
 
 	slash: "both",
 	testOnly: true,
